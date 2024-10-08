@@ -1,0 +1,33 @@
+gcloud storage cp gs://testbucket6563673/run.txt "C:\Users\Xiting Wang\Desktop\test.txt" --verbosity=debug --log-http
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\1read,64bytes,0msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\10read,64bytes,0msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\100read,64bytes,0msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\1000read,64bytes,0msec.properties"
+
+
+
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\1read,64bytes,1msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\10read,64bytes,1msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\100read,64bytes,1msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\1000read,64bytes,1msec.properties"
+
+
+
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\1read,64bytes,10msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\10read,64bytes,10msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\100read,64bytes,10msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\1000read,64bytes,10msec.properties"
+
+
+
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\1read,64bytes,100msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\10read,64bytes,100msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\100read,64bytes,100msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\1000read,64bytes,100msec.properties"
+
+
+
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\1read,64bytes,1000msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\10read,64bytes,1000msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\100read,64bytes,1000msec.properties"
+mvn exec:java -Dexec.mainClass="main.App" -Dexec.args=".\\properties\\1000read,64bytes,1000msec.properties"
